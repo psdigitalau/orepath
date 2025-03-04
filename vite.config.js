@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
+  base: '/orepath/',
   publicDir: 'public',
   root: './',
   build: {
