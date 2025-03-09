@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import eslint from 'vite-plugin-eslint';
 import handlebars from 'vite-plugin-handlebars';
+import removeDoctype from './remove-doctype';
 
 export default defineConfig({
   base: '/orepath/',
@@ -32,5 +33,6 @@ export default defineConfig({
     handlebars({
       partialDirectory: resolve(__dirname, 'partials'),
     }),
+    removeDoctype(),
   ],
 });

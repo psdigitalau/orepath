@@ -31,3 +31,22 @@ section {
     transform: translateX(-100%);
   }
 }
+
+.about-image {
+  clip-path: url(#image-mask);
+  -webkit-clip-path: url(#image-mask);
+}
+
+.service-mask {
+  clip-path: url(#service-mask);
+  -webkit-clip-path: url(#service-mask);
+}
+
+.team-image {
+  clip-path: url(#team-mask);
+  -webkit-clip-path: url(#team-mask);
+}
+
+img{
+  @apply w-full object-cover object-center;
+}

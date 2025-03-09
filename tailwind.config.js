@@ -11,6 +11,7 @@ export default {
         pink: '#E40980',
         background: '#121212',
         lightGrey: '#CECECE',
+        medGrey: '#6E6E6E',
         darkGrey: '#3E3E3E',
       },
       fontFamily: {

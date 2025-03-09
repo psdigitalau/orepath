@@ -1,3 +1,9 @@
 header {
   @apply fixed left-0 top-0 z-50 flex w-full justify-center px-[5%] py-8;
+  background-color: transparent;
+  background-image: radial-gradient(transparent 1px, #121212 1px);
+  background-size: 4px 4px;
+  backdrop-filter: blur(3px);
+  mask: linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  opacity: 1;
 }
