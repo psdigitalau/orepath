@@ -41,9 +41,11 @@
     "postcss": "^8.5.3",
     "postcss-nesting": "^13.0.1",
     "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^3.4.17",
     "vite": "6.2.0",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
     "the-new-css-reset": "^1.11.3"

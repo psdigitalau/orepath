@@ -1,8 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './partials/**/*', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blue: '#009FE2',
+        green: '#AFCB1F',
+        yellow: '#FFCB00',
+        orange: '#ED7F1A',
+        pink: '#E40980',
+        background: '#121212',
+        lightGrey: '#CECECE',
+        darkGrey: '#3E3E3E',
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

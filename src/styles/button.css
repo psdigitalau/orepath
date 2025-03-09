@@ -1,0 +1,41 @@
+button,
+.button {
+  @apply w-fit rounded-[6px] border-[1.5px] border-solid border-yellow bg-yellow px-6 py-2 font-medium text-background transition-all duration-300 ease-in-out;
+
+  &:hover {
+    @apply !bg-transparent text-yellow;
+  }
+
+  &.blue {
+    @apply border-blue bg-blue;
+
+    &:hover {
+      @apply text-blue;
+    }
+  }
+
+  &.pink {
+    @apply border-pink bg-pink;
+
+    &:hover {
+      @apply text-pink;
+    }
+  }
+}
+
+.link-hover {
+  @apply relative transition-all duration-300 ease-in-out;
+
+  &::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 flex h-[1.5px] w-0 bg-yellow transition-all duration-300 ease-in-out;
+  }
+
+  &:hover {
+    @apply text-yellow;
+
+    &::after {
+      @apply w-full;
+    }
+  }
+}

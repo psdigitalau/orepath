@@ -1,0 +1,11 @@
+main {
+  @apply w-full;
+}
+section {
+  @apply flex w-full justify-center px-[5%] py-24;
+}
+
+.gradient-line {
+  background: linear-gradient(90deg, #009fe2 0%, #afcb1f 25%, #ffcb00 50%, #ed7f1a 75%, #e40980 100%);
+  @apply flex h-2 w-[350px];
+}

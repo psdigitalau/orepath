@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html,
+body {
+  @apply font-inter text-base font-[400] leading-relaxed tracking-[0.01em] text-white;
+}
+
+h1,
+.is-h1 {
+  @apply text-8xl font-semibold capitalize leading-[1.1];
+}
+
+h2,
+.is-h2 {
+  @apply text-[4rem] font-semibold leading-snug;
+}
+
+h3,
+.is-h3 {
+  @apply text-[2rem] font-semibold leading-snug;
+}
+
+h4,
+.is-h4 {
+  @apply text-2xl font-semibold leading-relaxed;
+}
+
+h5,
+.is-h5,
+.supertitle {
+  @apply text-base font-semibold leading-relaxed;
+}
+
+.text-indent {
+  text-indent: 4rem;
+}

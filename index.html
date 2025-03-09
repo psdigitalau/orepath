@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orepath</title>
   </head>
-  <body>
-    <div id="app" class="bg-black"></div>
+  <body class="bg-background">
+    <header>
+      <div class="container flex flex-row items-center justify-between">
+        <img src="/logo.svg" alt="Orepath Logo" class="w-[70px] object-contain object-center" />
+        <div class="flex items-center justify-end gap-12 text-white">
+          <a href="#about" class="link-hover">About</a>
+          <a href="#services" class="link-hover">Services</a>
+          <a href="#team" class="link-hover">Team</a>
+          <a href="#contact" class="button">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <main class="overflow-hidden">
+      <!-- HERO SECTION -->
+      {{> hero }}
+      <!-- ABOUT SECTION -->
+      {{> about }}
+      <!-- SOLUTIONS SECTION -->
+      {{> solutions}}
+    </main>
+    <footer class=""></footer>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
