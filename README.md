@@ -39,10 +39,7 @@ This is the structure of the project:
 ├── partials              # Handlebars partial templates
 │   ├── components        # Reusable component partials
 ├── public                # Public assets and resources
-│   ├── logo.svg         # Logo assets
 ├── src                   # Source code
-│   ├── assets           # Project assets
-│   │   ├── images       # Image assets
 │   ├── js               # Javascript files
 │   ├── styles           # CSS styles
 │   │   ├── utils.css    # Utility styles
