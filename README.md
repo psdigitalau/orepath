@@ -23,6 +23,9 @@ npm run preview
 
 # Build and preview the project
 npm run buildpreview
+
+# Deploy to GitHub Pages
+npm run deploy
 ```
 
 ## Folder Structure
@@ -31,31 +34,30 @@ This is the structure of the project:
 
 ```plaintext
 /
-├── .github                 # Github actions and workflows
-├── node_modules            # Node.js dependencies for the project.
-├── public                  # Public assets and resources
-├── src                     # Source code
-│   ├── assets              # General assets for your project
-│   │   ├── images          # Store your images here
-│   ├── js                  # Javascript files of your project
-│   ├── styles              # CSS styles for your project
-├── .editorconfig           # Configuration for the EditorConfig plugin
-├── .eslintignore           # Files to be ignored by ESLint
-├── .eslintrc.json          # Configuration for ESLint
-├── .gitignore              # Files and folders to be ignored by Git
-├── .prettierignore         # Files to be ignored by Prettier
-├── .prettierrc             # Configuration for Prettier
-├── index.html              # The HTML file for your project
-├── LICENSE                 # The license for your project
-├── package-lock.json       # Lockfile for your project's dependencies
-├── package.json            # Defines your project and its dependencies
-├── postcss.config.cjs      # Configuration for PostCSS
-├── README.md               # This file
-├── vite.config.js          # Configuration for Vite
+├── .github                # Github actions and workflows
+├── node_modules          # Node.js dependencies for the project
+├── partials              # Handlebars partial templates
+│   ├── components        # Reusable component partials
+├── public                # Public assets and resources
+│   ├── logo.svg         # Logo assets
+├── src                   # Source code
+│   ├── assets           # Project assets
+│   │   ├── images       # Image assets
+│   ├── js               # Javascript files
+│   ├── styles           # CSS styles
+│   │   ├── utils.css    # Utility styles
+│   │   ├── header.css   # Header styles
+│   │   ├── typography.css # Typography styles
+│   │   ├── button.css   # Button styles
+├── .editorconfig        # Configuration for the EditorConfig plugin
+├── .eslintignore        # Files to be ignored by ESLint
+├── .eslintrc.json       # Configuration for ESLint
+├── .gitignore           # Files and folders to be ignored by Git
+├── .prettierignore      # Files to be ignored by Prettier
+├── .prettierrc          # Configuration for Prettier
+├── index.html           # The main HTML file
+├── package.json         # Project dependencies and scripts
+├── postcss.config.js    # PostCSS configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+├── vite.config.js       # Vite configuration with plugins
 ```
-
-## License
-
-This template was created under the [MIT License](LICENSE.md).
-
-**Happy coding!** 👨‍💻
