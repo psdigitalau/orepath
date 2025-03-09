@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orepath</title>
   </head>
-  <body class="bg-background">
+  <body class="bg-background flex flex-col">
     <header>
       <div class="container flex flex-row items-center justify-between">
         <img src="/logo.svg" alt="Orepath Logo" class="w-[70px] object-contain object-center" />
@@ -27,8 +27,11 @@
       {{> solutions }}
       <!-- TEAM SECTION -->
       {{> team }}
+      <!-- TESTIMONIALS SECTION -->
+      {{> testimonials }}
     </main>
-    <footer class=""></footer>
+    <!-- FOOTER -->
+    {{> footer }}
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

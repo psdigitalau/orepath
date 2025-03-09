@@ -1,7 +1,8 @@
 main {
   @apply w-full;
 }
-section {
+section,
+footer {
   @apply flex w-full justify-center px-[5%] py-24;
 }
 
@@ -47,6 +48,24 @@ section {
   -webkit-clip-path: url(#team-mask);
 }
 
-img{
+img {
   @apply w-full object-cover object-center;
+}
+
+.hide-outline .image-outline {
+  @apply hidden;
+}
+
+.swiper-slide-active > div {
+  @apply !opacity-100 !blur-0;
+}
+
+.swiper-slide {
+  .image-outline {
+    @apply opacity-0;
+  }
+}
+
+.swiper-slide-active .image-outline {
+  @apply opacity-100;
 }

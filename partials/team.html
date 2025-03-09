@@ -1,10 +1,9 @@
-<!doctype html>
 <section id="team" class="">
-  <div class="container">
-    <div class="flex flex-col gap-12">
+  <div class="container flex flex-col items-center gap-16">
+    <div class="flex w-full flex-col gap-12 self-start">
       <div class="flex flex-col gap-2">
         <div class="flex flex-row gap-4">
-          <span class="is-supertitle pt-3 text-darkGrey">03</span>
+          <span class="is-supertitle pt-1 text-darkGrey">03</span>
           <h5 class="is-h1 flex flex-col text-white">
             <span class="">Meet our</span>
             <span class="flex flex-row items-center gap-4">
@@ -21,27 +20,32 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-row gap-8">
-      <div class="flex flex-col gap-16">
+    <div class="team-group flex w-3/4 flex-row gap-8">
+      <div class="mt-[40%] flex flex-col gap-12">
+        <!-- prettier-ignore -->
         {{> components/team-member
             name="Daniel Narayan"
             role="Chief Executive Officer"
             bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             image="/daniel.png"
+
         }}
         {{> components/team-member
           name="Daniel Narayan"
           role="Chief Executive Officer"
           bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           image="/daniel.png"
+          extraClass="hide-outline"
         }}
       </div>
       <div class="flex flex-col gap-16">
+        <!-- prettier-ignore -->
         {{> components/team-member
           name="Daniel Narayan"
           role="Chief Executive Officer"
           bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           image="/daniel.png"
+          extraClass="hide-outline"
         }}
           {{> components/team-member
             name="Daniel Narayan"

@@ -13,6 +13,7 @@ export default {
         lightGrey: '#CECECE',
         medGrey: '#6E6E6E',
         darkGrey: '#3E3E3E',
+        lightBlack: '#1A1A1A',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

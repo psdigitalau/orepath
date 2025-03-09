@@ -34,3 +34,10 @@ h5,
 .text-indent {
   text-indent: 4rem;
 }
+
+footer a {
+  @apply transition-all duration-300 ease-in-out;
+  &:hover {
+    @apply text-darkGrey;
+  }
+}
