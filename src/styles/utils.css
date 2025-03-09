@@ -6,6 +6,28 @@ section {
 }
 
 .gradient-line {
-  background: linear-gradient(90deg, #009fe2 0%, #afcb1f 25%, #ffcb00 50%, #ed7f1a 75%, #e40980 100%);
-  @apply flex h-2 w-[350px];
+  @apply relative flex h-2 w-[350px] overflow-hidden;
+
+  &::before {
+    content: '';
+    background: linear-gradient(90deg, #009fe2, #afcb1f, #ffcb00, #ed7f1a, #e40980, #009fe2);
+    animation: gradient-scroll 5s linear infinite;
+    @apply absolute left-0 top-0 flex h-full w-full;
+  }
+
+  &::after {
+    content: '';
+    animation: gradient-scroll 5s linear infinite;
+    background: linear-gradient(90deg, #009fe2, #afcb1f, #ffcb00, #ed7f1a, #e40980, #009fe2);
+    @apply absolute left-[calc(100%-1px)] top-0 flex h-full w-full;
+  }
+}
+
+@keyframes gradient-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

@@ -5,17 +5,8 @@
     "es6": true,
     "node": true
   },
-  "extends": [
-    "airbnb-base",
-    "eslint:recommended",
-    "plugin:import/recommended",
-    "plugin:prettier/recommended",
-    "eslint-config-prettier"
-  ],
-  "plugins": [
-    "import",
-    "prettier"
-  ],
+  "extends": ["airbnb-base", "eslint:recommended", "plugin:import/recommended", "plugin:prettier/recommended", "eslint-config-prettier"],
+  "plugins": ["import", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
@@ -34,15 +25,9 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js"
-        ],
-        "path": [
-          "src"
-        ],
-        "moduleDirectory": [
-          "node_modules"
-        ]
+        "extensions": [".js"],
+        "path": ["src"],
+        "moduleDirectory": ["node_modules"]
       }
     }
   }

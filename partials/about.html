@@ -1,8 +1,20 @@
 <!doctype html>
-<section class="">
+<!-- SVG ClipPath Definition -->
+<svg width="0" height="0" class="absolute" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="image-mask" clipPathUnits="objectBoundingBox">
+      <path d="M 0 0 H 0.8 L 1 0.2 V 1 H 0.2 L 0 0.8 Z" />
+    </clipPath>
+  </defs>
+</svg>
+
+<section id="about" class="">
   <div class="container flex items-center gap-24">
     <div class="flex w-full flex-col gap-6">
-      <h3 class="is-h2">Who We Are</h3>
+      <div class="flex flex-row gap-4">
+        <span class="is-supertitle pt-3 text-darkGrey">01</span>
+        <h3 class="is-h2">Who We Are</h3>
+      </div>
       <p class="text-indent text-lightGrey">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -17,14 +29,6 @@
         <div class="rounded-full bg-pink px-4 py-1 text-background">.Net</div>
       </div>
     </div>
-    <!-- SVG ClipPath Definition -->
-    <svg width="0" height="0" class="absolute" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="image-mask" clipPathUnits="objectBoundingBox">
-          <path d="M 0 0 H 0.8 L 1 0.2 V 1 H 0.2 L 0 0.8 Z" />
-        </clipPath>
-      </defs>
-    </svg>
     <div class="w-full overflow-hidden">
       <img
         src="/about-team.png"

@@ -1,0 +1,52 @@
+.accordion {
+  @apply flex flex-col border-b border-darkGrey;
+
+  &.blue {
+    line {
+      @apply stroke-blue;
+    }
+
+    .active,
+    &:hover .accordion-header {
+      @apply text-blue;
+    }
+  }
+
+  &.yellow {
+    line {
+      @apply stroke-yellow;
+    }
+    .active,
+    &:hover .accordion-header {
+      @apply text-yellow;
+    }
+  }
+  &.pink {
+    line {
+      @apply stroke-pink;
+    }
+    .active,
+    &:hover .accordion-header {
+      @apply text-pink;
+    }
+  }
+}
+
+.accordion-header {
+  @apply is-supertitle flex cursor-pointer items-center justify-between py-6 text-white transition-all duration-300 ease-in-out;
+
+  svg {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  &:hover,
+  &.active {
+    svg {
+      @apply rotate-180;
+    }
+  }
+}
+
+.accordion-content {
+  @apply max-h-0 overflow-hidden pr-4 text-lightGrey transition-all duration-300;
+}
