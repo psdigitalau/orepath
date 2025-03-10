@@ -67,7 +67,6 @@ The project is configured to deploy using GitHub Actions. To modify the deployme
 1. Edit the .github/workflows/deploy.yml file
 2. Replace the GitHub Pages deployment section with FTPS configuration
 
-bash```
 # Example FTPS deployment configuration
 name: Deploy to FTPS
 
@@ -105,37 +104,6 @@ jobs:
 3. Add the necessary secrets (FTP_SERVER, FTP_USERNAME, FTP_PASSWORD) to your GitHub repository's settings.
 - Go to Settings > Secrets and Variables > Actions
 - Add FTP_SERVER , FTP_USERNAME , and FTP_PASSWORD secrets
-
-
-## Scripts
-
-Use the following scripts for your development workflow:
-
-```bash
-# Start the development server
-npm run dev
-
-# Checks your code for any linting errors
-npm run lint
-
-# Tries to automatically fix any linting errors present in your code
-npm run lint:fix
-
-# Formats your code in a consistent, predefined style using Prettier
-npm run format
-
-# Build for production
-npm run build
-
-# Preview the build
-npm run preview
-
-# Build and preview the project
-npm run buildpreview
-
-# Deploy to GitHub Pages
-npm run deploy
-```
 
 ## Folder Structure
 
