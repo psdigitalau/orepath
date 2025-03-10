@@ -1,8 +1,12 @@
 # Orepath
 
-# Getting Started
-
 ## Setup
+
+### Fork and Clone
+
+1. **Fork the Repository**: Go to the [GitHub repository](https://github.com/cullenwebber/orepath) and click the "Fork" button in the top right corner to create a copy of the repository under your own GitHub account.
+
+2. **Clone the Forked Repository**: Replace `yourusername` with your GitHub username in the following command:
 
 ```bash
 # Clone the repository
@@ -19,6 +23,15 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Add changes to the staging area
+git add .
+
+# Commit changes
+git commit -m "Your commit message"
+
+# Push changes to your GitHub repository
+git push origin main
 
 # Deploy to GitHub Pages
 npm run deploy
