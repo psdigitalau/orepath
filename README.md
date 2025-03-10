@@ -1,4 +1,113 @@
-# Scripts
+# Orepath
+
+# Getting Started
+
+## Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/orepath.git
+
+# Navigate to the project directory
+cd orepath
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Checks your code for any linting errors
+npm run lint
+
+# Tries to automatically fix any linting errors present in your code
+npm run lint:fix
+
+# Formats your code in a consistent, predefined style using Prettier
+npm run format
+
+# Build for production
+npm run build
+
+# Preview the build
+npm run preview
+
+# Build and preview the project
+npm run buildpreview
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## Making Changes
+Most content changes should be made in the partials directory:
+
+- partials/about.html - About section content
+- partials/hero.html - Hero section content
+- partials/team.html - Team members information
+- partials/solutions-01.html , partials/solutions-02.html , partials/solutions-03.html - Solutions sections
+- partials/testimonials.html - Customer testimonials
+- partials/footer.html - Footer testimonials
+- partials/components/ - Reusable components like team-member cards, testimonials, etc.
+After making changes, run the development server to see them in real-time:
+```bash
+npm run dev
+```
+
+## Building for Production
+To build the project for production, run:
+```bash
+npm run build
+```
+This will generate optimized files in the dist directory, you can then copy the contents of this file straight to the server.
+
+## Deployment
+The project is configured to deploy using GitHub Actions. To modify the deployment to use FTPS:
+
+1. Edit the .github/workflows/deploy.yml file
+2. Replace the GitHub Pages deployment section with FTPS configuration
+
+bash```
+# Example FTPS deployment configuration
+name: Deploy to FTPS
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: /path/to/destination/
+```
+3. Add the necessary secrets (FTP_SERVER, FTP_USERNAME, FTP_PASSWORD) to your GitHub repository's settings.
+- Go to Settings > Secrets and Variables > Actions
+- Add FTP_SERVER , FTP_USERNAME , and FTP_PASSWORD secrets
+
+
+## Scripts
 
 Use the following scripts for your development workflow:
 
