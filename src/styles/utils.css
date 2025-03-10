@@ -3,11 +3,11 @@ main {
 }
 section,
 footer {
-  @apply flex w-full justify-center px-[5%] py-24;
+  @apply flex w-full justify-center px-[5%] py-20 lg:py-24;
 }
 
 .gradient-line {
-  @apply relative flex h-2 w-[350px] overflow-hidden;
+  @apply relative flex h-2 w-[150px] overflow-hidden md:w-[250px] xl:w-[350px];
 
   &::before {
     content: '';
@@ -68,4 +68,8 @@ img {
 
 .swiper-slide-active .image-outline {
   @apply opacity-100;
+}
+
+.swiper {
+  @apply max-xl:!overflow-visible;
 }

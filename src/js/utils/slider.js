@@ -23,8 +23,11 @@ export default function initSliders() {
         prevEl: sliderCont.querySelector('.swiper-button-prev'),
       },
       breakpoints: {
-        640: {
+        1280: {
           slidesPerView: 3,
+        },
+        660: {
+          slidesPerView: 1.5,
         },
       },
     });

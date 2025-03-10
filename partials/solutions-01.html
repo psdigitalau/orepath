@@ -1,12 +1,13 @@
-<div class="grid grid-cols-3 gap-24 border-b border-b-blue pb-32">
-  <div class="flex flex-col gap-8">
+<div class="grid grid-cols-3 gap-8 border-b-blue pb-8 lg:gap-16 lg:border-b lg:pb-32 xl:gap-24 relative">
+  {{> svg/one class="max-w-[300px] absolute bottom-0 left-0 max-lg:hidden" }}
+  <div class="flex flex-col gap-8 max-lg:col-span-3">
     <h4 class="is-h3">
       Project Consulting <br />
       &amp; Due Diligence
     </h4>
     <a href="#contact" class="button blue">Contact Us</a>
   </div>
-  <div class="col-span-2 grid grid-cols-2 items-start gap-x-4">
+  <div class="col-span-3 grid items-start gap-x-4 md:grid-cols-2 lg:col-span-2">
     <!-- prettier-ignore -->
     {{> components/accordion
       title="Open pit optimisations"

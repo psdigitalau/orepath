@@ -1,27 +1,30 @@
 <section id="services" class="">
-  <div class="container flex flex-col gap-24">
-    <div class="grid grid-cols-3 gap-24">
-      <div class="col-span-2 col-start-2 flex flex-col gap-6">
+  <div class="container flex flex-col gap-12 md:gap-16 lg:gap-24">
+    <div class="grid grid-cols-3 gap-24 max-md:pb-8">
+      <div class="col-span-3 lg:col-span-2 lg:col-start-2 flex flex-col gap-6">
         <div class="flex flex-row gap-4">
-          <span class="is-supertitle pt-1 text-darkGrey">02</span>
+          <span class="is-supertitle sm:pt-1 text-darkGrey">02</span>
           <h3 class="is-h2 flex flex-col text-white">
             <span class="">Solutions beyond</span>
             <span class="flex flex-row items-center gap-4">
-              <div class="gradient-line w-[200px]"></div>
+              <div class="gradient-line w-[140px] sm:w-[200px]"></div>
               the wall
             </span>
           </h3>
         </div>
-        <p class="text-indent is-h4 text-lightGrey">
+        <p class="text-indent max-sm:text-base is-h4 text-lightGrey max-xl:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </div>
     </div>
-   {{> solutions-01 }}
-   {{> solutions-02 }}
-   {{> solutions-03 }}
-   {{> svg/solutions-mask}}
-   <img src="/solutions-image.png" alt="" class="w-full h-[600px] service-mask">
+    <div class="flex flex-col gap-16 xl:gap-24">
+      <!-- prettier-ignore -->
+      {{> solutions-01 }}
+      {{> solutions-02 }}
+      {{> solutions-03 }}
+    </div>
+    {{> svg/solutions-mask}}
+    <img src="/solutions-image.png" alt="" class="service-mask h-[200px] sm:h-[400px] lg:h-[600px] w-full" />
   </div>
 </section>

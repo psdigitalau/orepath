@@ -7,22 +7,22 @@ body {
 
 h1,
 .is-h1 {
-  @apply text-8xl font-semibold capitalize leading-[1.1];
+  @apply text-4xl sm:text-5xl font-semibold capitalize leading-[1.1] md:text-6xl xl:text-8xl;
 }
 
 h2,
 .is-h2 {
-  @apply text-[4rem] font-semibold capitalize leading-[1.1];
+  @apply text-3xl sm:text-4xl font-semibold capitalize leading-[1.1] md:text-5xl xl:text-[4rem];
 }
 
 h3,
 .is-h3 {
-  @apply text-[2rem] font-semibold leading-snug;
+  @apply text-[1.5rem] font-semibold leading-snug xl:text-[2rem];
 }
 
 h4,
 .is-h4 {
-  @apply text-2xl leading-relaxed;
+  @apply text-xl leading-relaxed lg:text-2xl;
 }
 
 h5,
