@@ -68,7 +68,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm ci
@@ -85,8 +85,9 @@ jobs:
           protocol: ftps
           local-dir: ./dist/
           server-dir: /path/to/destination/
-```
-3. Add the necessary secrets (FTP_SERVER, FTP_USERNAME, FTP_PASSWORD) to your GitHub repository's settings.
+
+## Configuration
+Add the necessary secrets (FTP_SERVER, FTP_USERNAME, FTP_PASSWORD) to your GitHub repository's settings.
 - Go to Settings > Secrets and Variables > Actions
 - Add FTP_SERVER , FTP_USERNAME , and FTP_PASSWORD secrets
 
