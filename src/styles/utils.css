@@ -73,3 +73,9 @@ img {
 .swiper {
   @apply max-xl:!overflow-visible;
 }
+
+#animated-logo{
+  path {
+    @apply !fill-background !stroke-background;
+  }
+}

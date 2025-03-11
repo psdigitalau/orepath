@@ -48,6 +48,7 @@
     "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
+    "lottie-web": "^5.12.2",
     "swiper": "^11.2.5",
     "the-new-css-reset": "^1.11.3"
   }
