@@ -1,13 +1,13 @@
 {{> svg/team-mask }}
 <div class="relative flex flex-col gap-6 p-6 team-member {{ extraClass }}">
-  <div class="image-outline absolute left-0 top-0 size-4 border-l border-t border-yellow"></div>
-  <div class="image-outline absolute right-0 top-0 size-4 border-r border-t border-yellow"></div>
-  <div class="image-outline absolute bottom-0 right-0 size-4 border-b border-r border-yellow"></div>
-  <div class="image-outline absolute bottom-0 left-0 size-4 border-b border-l border-yellow"></div>
+  <div class="image-outline absolute left-0 top-0 size-4 border-l border-t border-solid border-yellow"></div>
+  <div class="image-outline absolute right-0 top-0 size-4 border-r border-t border-solid border-yellow"></div>
+  <div class="image-outline absolute bottom-0 right-0 size-4 border-b border-r border-solid border-yellow"></div>
+  <div class="image-outline absolute bottom-0 left-0 size-4 border-b border-l border-solid border-yellow"></div>
   <img src="{{ image }}" alt="Team image of {{ name }}" class="team-image aspect-square" />
   <div class="flex flex-col">
     <h5 class="is-h4 font-semibold">{{ name }}</h5>
-    <span class="text-medGrey text-sm font-semibold">{{ role }}</span>
+    <span class="text-sm font-semibold text-medGrey">{{ role }}</span>
   </div>
   <p class="text-lightGrey">{{ bio }}</p>
 </div>
