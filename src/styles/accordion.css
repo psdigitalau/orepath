@@ -1,5 +1,5 @@
 .accordion {
-  @apply flex flex-col border-b border-solid border-darkGrey;
+  @apply flex flex-col border-b border-solid border-transparent border-b-darkGrey;
 
   &.blue {
     line {
