@@ -134,3 +134,4 @@ This is the structure of the project:
 ├── tailwind.config.js   # Tailwind CSS configuration
 ├── vite.config.js       # Vite configuration with plugins
 ```
+
